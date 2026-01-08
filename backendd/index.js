@@ -1,8 +1,11 @@
 const express = require('express');
+
 const connectToMongo = require('./db');
 const app = express();
 const port = 5000;
 const cors = require('cors');
+
+require('dotenv').config();
 
 connectToMongo();
  
